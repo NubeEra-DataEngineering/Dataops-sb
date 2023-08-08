@@ -1,0 +1,10 @@
+name: Just for Understanding executing commands
+on: [push]
+jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Welcome to Ubuntu Linux"
+      - run: pwd
+      - name: Checking Github workspace with reserve variable
+        run: ls ${{ github.workspace }}
